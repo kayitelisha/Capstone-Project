@@ -1,0 +1,62 @@
+{
+    "cells": [
+        {
+            "metadata": {
+                "collapsed": true
+            },
+            "cell_type": "markdown",
+            "source": "### The Battle of Neighborhoods|\n### Business Proposal |\n### Introduction:\nNew York in Canada remains one of the most popular expat destinations with over 650,000 Brits currently calling it home. With wide-open spaces and safe, affluent cities, the benefits of living in the Great White North are clear. Canada is one of the most safe, secure and happy nations on the planet with numerous additional perks from polar bears to the Northern Lights. Thousands of individuals make the move across the Atlantic every year in search of better Cafe, School, Super market, medical shops, grocery shops, mall, theatre, hospitals. \nThis Project aim to create an analysis of features for individuals migrating to Scarborough to search for the best neighbourhood as a proportional analysis between neighbourhoods. The features include median housing price and better school according to ratings, crime rates of that particular area, road connectivity, weather conditions, good management for emergency, water resources both fresh and waste water and excrement conveyed in sewers and recreational facilities.\nIt will help persons to get cognizance of the area and neighbourhood before moving into a new city, state, country."
+        },
+        {
+            "metadata": {},
+            "cell_type": "markdown",
+            "source": "### Problem Which Tried to Solve:\nDue to the diverse and rich culture of Canada, this project tries to suggest analysis and awareness of better neighbourhoods for persons to visit or settle down in. It also tries to profer solution of connectivity in terms of proximity to airport, bus stops/stand, city centres, markets, schools, cinemas, hospital, joint and recreational activities.\n1.\tSorted list of houses in terms of housing prices in a ascending or descending order.\n\n2.\tSorted list of schools in terms of location, fees, rating and reviews."
+        },
+        {
+            "metadata": {},
+            "cell_type": "markdown",
+            "source": "### LOCATION:\nNorth York is one of six administrative districts of Toronto, Ontario, Canada. It is located directly north of York, Old Toronto and East York, between Etobicoke to the west and Scarborough to the east. As of the 2016 Census, it had a population of 869,401. It was first created as a township in 1922 out of the northern part of the former township of York, a municipality that was located along the western border of Old Toronto. Following its inclusion in Metropolitan Toronto in 1954, it was one of the fastest-growing parts of the region due to its proximity to Old Toronto. It was declared a borough in 1967, and later became a city in 1979, attracting high-density residences, rapid transit, and a number of corporate headquarters in North York City Centre, its central business district. In 1998, North York was amalgamated with the rest of Metropolitan Toronto to form the new city of Toronto and has since been a secondary economic hub of the city outside Downtown Toronto."
+        },
+        {
+            "metadata": {},
+            "cell_type": "markdown",
+            "source": "### Foursquare API:\nThis project would use Four-square API as its prime data gathering source as it has a database of millions of places, especially their places API which provides the ability to perform location search, location sharing and details about a business.\n"
+        },
+        {
+            "metadata": {},
+            "cell_type": "markdown",
+            "source": "### Work Flow:\nUsing credentials of Foursquare API features of near-by places of the neighborhoods would be mined. Due to http request limitations the number of places per neighborhood parameter would reasonably be set to 100 and the radius parameter would be set to 500."
+        },
+        {
+            "metadata": {},
+            "cell_type": "markdown",
+            "source": "### Clustering Approach:\nTo compare the similarities of two cities, we decided to explore neighborhoods, segment them, and group them into clusters to find similar neighborhoods in a big city like New York, Canada. In orderto do that, we need to cluster data which is a form of unsupervised machine learning: k-means clustering algorithm."
+        },
+        {
+            "metadata": {},
+            "cell_type": "markdown",
+            "source": "### Libraries Which are Used to Develope the Project:\u00b6\nPandas: For creating and manipulating dataframes.\n\nFolium: Python visualization library would be used to visualize the neighborhoods cluster distribution of using interactive leaflet map.\n\nScikit Learn: For importing k-means clustering.\n\nJSON: Library to handle JSON files.\n\nXML: To separate data from presentation and XML stores data in plain text format.\n\nGeocoder: To retrieve Location Data.\n\nBeautiful Soup and Requests: To scrap and library to handle http requests.\n\nMatplotlib: Python Plotting Module."
+        }
+    ],
+    "metadata": {
+        "kernelspec": {
+            "name": "python3",
+            "display_name": "Python 3.6",
+            "language": "python"
+        },
+        "language_info": {
+            "name": "python",
+            "version": "3.6.9",
+            "mimetype": "text/x-python",
+            "codemirror_mode": {
+                "name": "ipython",
+                "version": 3
+            },
+            "pygments_lexer": "ipython3",
+            "nbconvert_exporter": "python",
+            "file_extension": ".py"
+        }
+    },
+    "nbformat": 4,
+    "nbformat_minor": 1
+}
